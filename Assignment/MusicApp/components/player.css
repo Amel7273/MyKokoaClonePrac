@@ -1,0 +1,86 @@
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.album-cover {
+  width: 100%;
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  justify-content: center;
+  align-items: center;
+}
+.album-cover img {
+  width: 265px;
+  height: 265px;
+  border-radius: 20px;
+  box-shadow: 0px 20px 20px 5px rgba(0, 0, 0, 0.3);
+}
+.player .title {
+  font-size: 26px;
+  font-weight: 600;
+}
+.player .artist {
+  margin-top: 20px;
+  opacity: 0.5;
+}
+.player .status-bar {
+  width: 300px;
+}
+.status-bar__time {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.status-bar__time span {
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  overflow: hidden;
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: #e5e4e3;
+  border-radius: 5px; /* iOS */
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 5px;
+  height: 5px;
+  background: white;
+
+  box-shadow: -100vw 0 0 100vw black;
+  cursor: pointer;
+}
+
+.player__btns {
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 24px;
+}
+.player__btns__inact {
+  opacity: 0.7;
+}
+.player__btns__play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  color: white;
+  background-color: black;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Baloo Tamma 2", sans;
+  background-color: #b7d7d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.wrapper {
+  background-color: whitesmoke;
+  width: 1000px;
+}
+header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 20px 20px;
+}
+header i {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  font-size: 28px;
+}
+h1 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.main-song {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main-song__cover {
+  width: 80px;
+  height: 80px;
+  background-color: #ffe9cd;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 20px;
+}
+.main-song__title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+.main-song__author {
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.7;
+}
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0 30px 0;
+}
+.btns__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-bottom-width: 5px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.btns__btn--big {
+  width: 200px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 15px;
+}
+.btns__btn:first-child i {
+  margin-right: 10px;
+}
+.song-list__song {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.song-list__cover {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 0 20px 0 20px;
+}
+.song-list__song:nth-child(1) > .song-list__cover {
+  background-color: #7a8d9c;
+}
+.song-list__song:nth-child(2) .song-list__cover {
+  background-color: #dfd1d1;
+}
+.song-list__song:nth-child(3) .song-list__cover {
+  background-color: #dac4af;
+}
+.song-list__song:nth-child(4) .song-list__cover {
+  background-color: #f0eade;
+}
+.song-list__song:nth-child(5) .song-list__cover {
+  background-color: #a7b7ac;
+}
+.song-list__data h5 {
+  width: 250px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.song-list__data h6 {
+  opacity: 0.7;
+}
+
+.song-list {
+  display: flex;
+  flex-direction: column;
+}

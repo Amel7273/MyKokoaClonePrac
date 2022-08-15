@@ -1,0 +1,128 @@
+.artist-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.artist-profile__img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 20px 0 30px 0;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.artist-profile h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.artist-profile h5 {
+  font-size: 16px;
+  opacity: 0.5;
+  margin-bottom: 40px;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btns__btn {
+  font-size: 14px;
+  padding: 15px 30px;
+  border-radius: 30px;
+}
+.btns__shuffle {
+  background-color: black;
+  color: rgb(219, 219, 219);
+  margin-right: 40px;
+}
+.btns__like {
+  color: rgb(170, 170, 170);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.03),
+    0px -5px 10px rgba(0, 0, 0, 0.03);
+}
+.btns__like i {
+  color: black;
+  margin-right: 5px;
+}
+.music-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+.music-list__music {
+  width: 330px;
+  padding: 10px 0;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.music-list__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 7px;
+  margin-left: 20px;
+}
+.music-list__song-info {
+  width: 100%;
+  display: flex;
+  margin-left: 20px;
+  flex-direction: column;
+  justify-content: center;
+}
+.music-list__artist {
+  opacity: 0.5;
+  font-size: 12px;
+}
+.music-list__title {
+  font-size: 16px;
+  font-weight: 600px;
+}
+.music-list__music i {
+  margin-right: 20px;
+}
+.music-list__music:nth-child(2) {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+}
+.now-playing {
+  width: 320px;
+  height: 80px;
+  margin: 10px 20px;
+  background-color: black;
+  border-radius: 50px;
+  display: flex;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+.now-playing__info {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.now-playing__info h5 {
+  color: rgb(150, 150, 150);
+  font-size: 14px;
+  width: 160px;
+  margin-bottom: 5px;
+}
+.now-playing h4 {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+.now-playing__playbtns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 150px;
+}
+.now-playing i {
+  font-size: 20px;
+  color: white;
+}
+.now-playing i:nth-child(2) {
+  padding: 0 20px;
+}

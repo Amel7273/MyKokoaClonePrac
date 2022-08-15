@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Vesper+Libre:wght@900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Vesper Libre", serif;
+}
+body {
+  width: 100vw;
+  background-color: whitesmoke;
+  padding: 0px;
+}
+#container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+h1 {
+  width: 100vw;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  font-size: 48px;
+}
+.outerdiv {
+  position: relative;
+  border: 5px solid white;
+  width: 300px;
+  height: 600px;
+  margin: 10px;
+}
+.innerdiv {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  top: 30px;
+}
+.outerdiv:first-child {
+  background-color: tomato;
+}
+.outerdiv:nth-child(2) {
+  background-color: teal;
+}
+.outerdiv:nth-child(3) {
+  background-color: Burlywood;
+}
+.outerdiv:nth-child(4) {
+  background-color: thistle;
+}
+.colortext {
+  font-size: 40px;
+}
+.hexcode {
+  font-size: 28px;
+}

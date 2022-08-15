@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import "reset.css";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: whitesmoke;
+  font-family: "Open Sans", sans-serif;
+}
+html,
+body,
+.container {
+  width: 390px;
+  height: 100vh;
+}
+header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f6ac0c;
+  padding: 0 20px;
+}
+header h3 {
+  font-weight: 600;
+  font-size: 28px;
+}
+.search-box {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.search-box input {
+  border: none;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+.search-box i {
+  position: absolute;
+  opacity: 0.2;
+  right: 10px;
+  top: 7px;
+}
+.current-artist {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.current-artist h1 {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.current-artist img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.current-artist__info {
+  width: 180px;
+  margin-left: 20px;
+  flex-direction: column;
+  display: flex;
+}
+.current-artist__info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.current-artist__info h5 {
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 50%;
+  margin-bottom: 20px;
+}
+.current-artist__info .btns {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+.current-artist__info .btns .btn {
+  background-color: #f9dda2;
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.current-artist__info .info {
+  display: flex;
+  justify-content: center;
+}
+.current-artist__info .info h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  width: 100px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.album-list {
+  margin: 20px;
+}
+.album-list h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.album-list .albums {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: scroll;
+  margin: 20px 0;
+}
+.album-list__album {
+  width: 100px;
+  margin-right: 20px;
+}
+.album-list__album img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+.album-list__album h4 {
+  margin: 5px 0;
+  font-size: 10px;
+}
+.album-list__album h5 {
+  font-size: 10px;
+  opacity: 0.7;
+}
